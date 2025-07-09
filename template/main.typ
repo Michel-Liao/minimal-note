@@ -1,4 +1,5 @@
-#import "@preview/minimal-note:0.10.0": *
+// #import "@preview/minimal-note:0.10.0": *
+#import "@local/minimal-note:0.10.0": *
 
 #show: minimal-note.with(
   title: [Paper Title],

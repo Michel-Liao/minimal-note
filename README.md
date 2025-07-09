@@ -38,3 +38,4 @@ Have recommendations? Please submit an issue.
 
 - [ ] Bibliography support
 - [ ] showybox support 
+- [ ] Multiple authors support
