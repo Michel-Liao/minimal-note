@@ -36,6 +36,7 @@ The template will initialize your package with a sample call to the `minimal-not
 
 Have recommendations? Please submit an issue.
 
+- [x] Algorithm support
 - [ ] Bibliography support
 - [ ] showybox support 
 - [ ] Multiple authors support
