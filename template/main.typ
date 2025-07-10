@@ -2,6 +2,7 @@
 #import "@local/minimal-note:0.10.0": *
 #show: style-algorithm
 
+
 #show: minimal-note.with(
   title: [Paper Title],
   author: [Your Name],
@@ -18,7 +19,7 @@ These probability laws, such as the #link(<chain-rule>, "Chain Rule") are fundam
 For two events $A$ and $B$, the *Chain Rule* states $ PP(A inter B) = PP(B bar A) PP(A). $
 == PSRL
 
-The PSRL algorithm is shown in #link(<psrl-alg>, "Algorithm 1").
+The PSRL algorithm @strens2000bayesian is shown in #link(<psrl-alg>, "Algorithm 1").
 
 #algorithm-figure(
   "Posterior Sampling for Reinforcement Learning (PSRL)",
@@ -55,3 +56,6 @@ Now, consider an application of the Chain Rule, mentioned in @chain-rule:
 
 #green-box("Green Box", lorem(100))
 #orange-box("Orange Box", lorem(100))
+
+// See https://typst.app/docs/reference/model/bibliography/ for more on styling your bibliography
+#bibliography("ref.bib", style: "institute-of-electrical-and-electronics-engineers")
