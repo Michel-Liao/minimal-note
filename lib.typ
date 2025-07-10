@@ -12,7 +12,8 @@
 ) = {
   // Styling Configurations
   set heading(numbering: "1.")
-  
+
+  // Color links
   show link: it => {
     let default-color = rgb("#57B9FF")
     let label-color = rgb("#57B94F")
