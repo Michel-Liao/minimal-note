@@ -1,6 +1,4 @@
 #import "@local/minimal-note:0.10.0": *
-#show: style-algorithm
-
 
 #show: minimal-note.with(
   title: [Paper Title],
@@ -57,4 +55,4 @@ Now, consider an application of the Chain Rule, mentioned in @chain-rule:
 #orange-box("Orange Box", lorem(100))
 
 // See https://typst.app/docs/reference/model/bibliography/ for more on styling your bibliography
-#bibliography("ref.bib", style: "institute-of-electrical-and-electronics-engineers")
+#bibliography("refs.bib", style: "institute-of-electrical-and-electronics-engineers")

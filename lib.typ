@@ -2,16 +2,22 @@
 #import "@preview/algorithmic:1.0.0"
 #import algorithmic: *
 
+// === Codly Logistics ===
+#import "@preview/codly:1.3.0": *
+#import "@preview/codly-languages:0.1.1": *
+
 
 // === Template ===
 #let minimal-note(
   title: [Paper Title],
   author: [Albert Einstein],
   date: datetime.today().display("[month repr:long], [year]"),
+  show_outline: true,
   doc
 ) = {
   // Styling Configurations
   set heading(numbering: "1.")
+  set figure(numbering: "1")
 
   // Color links
   show link: it => {
@@ -25,12 +31,22 @@
     }
   }
 
+  // Packages
+  show: codly-init.with()
+  codly(
+    languages: codly-languages,
+  )
+
+  show: style-algorithm
+
   // Title and Date
   align(center, text(18pt)[*#title*])
   align(center)[#author \ #date]
 
   // Table of Contents
-  outline()
+  if show_outline {
+    outline()
+  }
 
   // Document
   doc
