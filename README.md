@@ -29,7 +29,8 @@ The template will initialize your package with a sample call to the `minimal-not
 #show: minimal-note.with(
   title: [Paper Title],
   author: [Your Name],
-  date: datetime.today().display("[month repr:long], [year]")
+  date: datetime.today().display("[month repr:long], [year]"),
+  outline: true,
 )
 ```
 
